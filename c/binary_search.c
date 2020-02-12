@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 //二分查找
 //接受一个从小到大排列的整数数组(一个指针和和以index为标准的，从最左边到最右边的范围)，一个要查找的整数，返回关键字在数组中的index
 int binary_search_1(int* array,int left, int right,int key)
@@ -58,9 +58,3 @@ int binary_search_2(int* array,int left,int right, int key)
     printf("很抱歉，没有找到\n");
     return -1;
 }
-
-
-
-//接受一个从小到大排列的整数数组array和以index为标准的，从最左边到最右边的范围left,right，一个要查找的整数key，返回关键字在数组中的index
-int binary_search_1(int* array,int left, int right,int key);
-int binary_search_2(int* array,int left, int right,int key);

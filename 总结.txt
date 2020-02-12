@@ -1,0 +1,37 @@
+yum install (主要用来安装)
+yum remove
+su root(切换到root用户)
+su 用户名（切回去）
+ls(列出当前目录里面的文件)
+cd（跳转）
+pwd(查看当前工作目录)
+touch（创建文件）
+mkdir 创建文件夹
+rmdir 删除文件夹
+rm（删除文件）
+mkdir xxx（创建文件夹）
+rmdir xxx（删除文件夹）
+python3 xxx.py(运行python文件)f
+whereis xxx(询问xxx的路径)
+vi xxx.xxx用vim编辑器打开
+在vim下，用a切换到编辑模式，按ESC切换到控制模式
+在控制模式下 ：wq意思是保存并退出
+
+//学校的给的编译好的文件都是32位的，为了成功链接，在gcc上加命令 -m32,让gcc生成32位的.o文件
+
+
+git:
+git config --global credential.helper store //这个命令可以以后只输入一次密码
+rm -rf .git  //把git库给删掉，本质上删除.git文件
+git add.//加入到git列表
+git commit -m//加入到本地仓库
+git push //push到远程仓库
+
+
+
+vscode
+workbench.statusBar.visible//把底部的状态栏打开
+
+内存泄漏工具valgrind
+valgrind --tool=memcheck --leak-check=yes --show-reachable=yes ./main
+

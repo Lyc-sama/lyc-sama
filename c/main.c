@@ -1,3 +1,4 @@
+#define NULL 0
 #include <stdio.h>
 #include <stdlib.h>
 #include"stack.h"
@@ -32,7 +33,15 @@
 */
 int main()
 {
-    
+    node* j=create_node(10,NULL,NULL);
+    node* e=create_node(5,NULL,j);
+    node* f=create_node(6,NULL,NULL);
+    node* b=create_node(2,e,f);
+    node* g=create_node(7,NULL,NULL);
+    node* h=create_node(8,NULL,NULL);
+    node* c=create_node(3,g,h);
+    node* a=create_node(1,b,c);
+    inorder_complex(a);
     return 1;
 
 }

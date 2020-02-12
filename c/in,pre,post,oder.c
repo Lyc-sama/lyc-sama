@@ -1,5 +1,7 @@
 
-
+#include"stack.h"
+#include <stdlib.h>
+#include <stdio.h>
 node* create_node(double value,node* left,node* right)
 {
     node* temp=(node*)malloc(sizeof(node));
@@ -9,10 +11,12 @@ node* create_node(double value,node* left,node* right)
     return temp;
 }
 
+
 void inorder_complex(node*first)
 {
+    printf("现在开始inorder遍历啦\n");
     stack* pointer= ceate_stack();
-    while(pointer->location!=NULL)
+    while(pointer->location!=NULL|| first!=NULL)
     {
         while(first!=NULL)
         {
@@ -26,12 +30,9 @@ void inorder_complex(node*first)
             first=first->right;
         }
     }
-    
-    
+    free_stack(pointer);
+    printf("结束啦\n");
+    return; 
 }
-
-
-
-
 
 
